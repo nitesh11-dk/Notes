@@ -1,6 +1,4 @@
 
----
-
 # MySQL Database Notes
 
 ## Introduction
