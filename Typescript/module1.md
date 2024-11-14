@@ -1,3 +1,4 @@
+
 E21### Basic Types in TypeScript
 
 #### 1. **Primitive Types (Number, String, Boolean)**
