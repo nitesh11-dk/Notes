@@ -180,6 +180,3 @@ const user: Readonly<UserProfile> = { name: "Alice", age: 30 };
 3. **Use type assertion** (`as`) and **non-null assertion** (`!`) when you are certain about a variable’s type at runtime.
 4. **Type guards** (`typeof`, `instanceof`) allow precise narrowing down of types in unions, avoiding invalid operations.
 5. **Utility types** such as `Partial`, `Required`, and `Readonly` help in creating more descriptive and maintainable types.
-
-
-
