@@ -1,4 +1,4 @@
-### Basic Types in TypeScript
+E21### Basic Types in TypeScript
 
 #### 1. **Primitive Types (Number, String, Boolean)**
 - **Number**: JavaScript ke saare numbers floating point hote hain. TypeScript me `number` type se batate ho.
