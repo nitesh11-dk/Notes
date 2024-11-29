@@ -176,3 +176,19 @@ A **Virtual Machine (VM)** is a software-based emulation of a physical computer.
 - **I/O Virtualization**: Virtual devices are created for the guest OS, which interact with actual hardware through the hypervisor.
 
 VMs allow multiple operating systems to run on a single physical machine, offering isolation, flexibility, and efficient resource utilization.
+
+A **PCB (Process Control Block)** is a data structure used by the operating system to store information about a process. It contains all the details needed for the operating system to manage and control the execution of a process. Each process in the system has a unique PCB, which is created when the process is initiated and is destroyed when the process terminates.
+
+Key elements stored in the PCB include:
+
+1. **Process ID (PID)**: A unique identifier for the process.
+2. **Program Counter (PC)**: The address of the next instruction to be executed.
+3. **Process State**: The current state of the process, such as running, waiting, ready, or terminated.
+4. **CPU Registers**: Values stored in the CPU registers that the process uses, like the accumulator, index registers, etc.
+5. **Memory Management Information**: Information about the process’s memory allocation, such as base and limit registers, page tables, etc.
+6. **Scheduling Information**: Data needed by the scheduler, such as priority, pointers to scheduling queues, etc.
+7. **I/O Status Information**: Information about the process’s I/O operations, such as devices assigned to the process.
+8. **Accounting Information**: Data like the amount of CPU time used, the process's start time, etc.
+9. **Pointers to Parent/Child Processes**: Links to the parent process or child processes in case of process creation or termination.
+
+In short, the **PCB** is a crucial part of the operating system's process management and ensures that each process can be uniquely identified and managed.
