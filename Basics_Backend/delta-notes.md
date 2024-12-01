@@ -223,14 +223,14 @@ app.set("views", path.join(__dirname, "views"));
 
 Here’s a table that summarizes the EJS syntax for outputting values and control flow, including conditionals and loops:
 
-| EJS Syntax          | Description                                      | Example                                 |
-|---------------------|--------------------------------------------------|-----------------------------------------|
-| `<%= ... %>`        | Outputs the value into the template (HTML escaped) | `<h1><%= title %></h1>`                |
-| `<%- ... %>`        | Outputs the unescaped value into the template    | `<h1><%- rawHTML %></h1>`               |
-| `<% if (condition) { %>` | Starts an if statement                     | `<% if (isLoggedIn) { %><h1>Welcome!</h1><% } %>` |
-| `<% } else { %>`    | Starts the else block                            | `<% if (isLoggedIn) { %> ... <% } else { %> <h1>Please Log In</h1> <% } %>` |
-| `<% for (let item of array) { %>` | Starts a for loop                | `<% for (let follower of followers) { %><li><%= follower %></li><% } %>` |
-| `<% } %>`           | Ends the if or loop block                        | `... <% for (let i = 0; i < 5; i++) { %> ... <% } %>` |
+| EJS Syntax                        | Description                                        | Example                                                                     |
+| --------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------- |
+| `<%= ... %>`                      | Outputs the value into the template (HTML escaped) | `<h1><%= title %></h1>`                                                     |
+| `<%- ... %>`                      | Outputs the unescaped value into the template      | `<h1><%- rawHTML %></h1>`                                                   |
+| `<% if (condition) { %>`          | Starts an if statement                             | `<% if (isLoggedIn) { %><h1>Welcome!</h1><% } %>`                           |
+| `<% } else { %>`                  | Starts the else block                              | `<% if (isLoggedIn) { %> ... <% } else { %> <h1>Please Log In</h1> <% } %>` |
+| `<% for (let item of array) { %>` | Starts a for loop                                  | `<% for (let follower of followers) { %><li><%= follower %></li><% } %>`    |
+| `<% } %>`                         | Ends the if or loop block                          | `... <% for (let i = 0; i < 5; i++) { %> ... <% } %>`                       |
 
 ### Notes
 - Use `<%= ... %>` when you want to display a value that should be escaped for HTML (to prevent XSS attacks).

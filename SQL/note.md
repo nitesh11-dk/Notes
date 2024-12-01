@@ -102,22 +102,22 @@ SHOW TABLES;
 ## DATA TYPES
 
 
-| **Data Type**     | **Description**                                   | **Unsigned**                      |
-|-------------------|---------------------------------------------------|-----------------------------------|
-| **TINYINT**       | Very small integer (1 byte)                       | TINYINT UNSIGNED (0 to 255)      |
-| **SMALLINT**      | Small integer (2 bytes)                           | SMALLINT UNSIGNED (0 to 65,535)  |
-| **MEDIUMINT**     | Medium-sized integer (3 bytes)                    | MEDIUMINT UNSIGNED (0 to 16,777,215) |
-| **INT**           | Standard integer (4 bytes)                        | INT UNSIGNED (0 to 4,294,967,295) |
-| **BIGINT**        | Large integer (8 bytes)                           | BIGINT UNSIGNED (0 to 18,446,744,073,709,551,615) |
-| **FLOAT**         | Floating-point number (4 bytes)                   | FLOAT UNSIGNED (0 to 3.402823466E+38) |
-| **DOUBLE**        | Double-precision floating-point number (8 bytes) | DOUBLE UNSIGNED (0 to 1.7976931348623157E+308) |
-| **DECIMAL(M,D)**  | Fixed-point number (M = total digits, D = decimals) | DECIMAL(M,D) UNSIGNED |
-| **CHAR(N)**       | Fixed-length string (N characters)                | CHAR(N) UNSIGNED (treated as a string) |
-| **VARCHAR(N)**    | Variable-length string (up to N characters)      | VARCHAR(N) UNSIGNED (treated as a string) |
-| **DATE**          | Date value (YYYY-MM-DD)                           | Not applicable                    |
-| **DATETIME**      | Date and time (YYYY-MM-DD HH:MM:SS)              | Not applicable                    |
-| **TIMESTAMP**     | Timestamp (YYYY-MM-DD HH:MM:SS)                  | Not applicable                    |
-| **TIME**          | Time value (HH:MM:SS)                            | Not applicable                    |
+| **Data Type**    | **Description**                                     | **Unsigned**                                      |
+| ---------------- | --------------------------------------------------- | ------------------------------------------------- |
+| **TINYINT**      | Very small integer (1 byte)                         | TINYINT UNSIGNED (0 to 255)                       |
+| **SMALLINT**     | Small integer (2 bytes)                             | SMALLINT UNSIGNED (0 to 65,535)                   |
+| **MEDIUMINT**    | Medium-sized integer (3 bytes)                      | MEDIUMINT UNSIGNED (0 to 16,777,215)              |
+| **INT**          | Standard integer (4 bytes)                          | INT UNSIGNED (0 to 4,294,967,295)                 |
+| **BIGINT**       | Large integer (8 bytes)                             | BIGINT UNSIGNED (0 to 18,446,744,073,709,551,615) |
+| **FLOAT**        | Floating-point number (4 bytes)                     | FLOAT UNSIGNED (0 to 3.402823466E+38)             |
+| **DOUBLE**       | Double-precision floating-point number (8 bytes)    | DOUBLE UNSIGNED (0 to 1.7976931348623157E+308)    |
+| **DECIMAL(M,D)** | Fixed-point number (M = total digits, D = decimals) | DECIMAL(M,D) UNSIGNED                             |
+| **CHAR(N)**      | Fixed-length string (N characters)                  | CHAR(N) UNSIGNED (treated as a string)            |
+| **VARCHAR(N)**   | Variable-length string (up to N characters)         | VARCHAR(N) UNSIGNED (treated as a string)         |
+| **DATE**         | Date value (YYYY-MM-DD)                             | Not applicable                                    |
+| **DATETIME**     | Date and time (YYYY-MM-DD HH:MM:SS)                 | Not applicable                                    |
+| **TIMESTAMP**    | Timestamp (YYYY-MM-DD HH:MM:SS)                     | Not applicable                                    |
+| **TIME**         | Time value (HH:MM:SS)                               | Not applicable                                    |
 
 ### Notes:
 - The **Unsigned** variant of an integer type only allows non-negative values, effectively doubling the maximum positive value it can hold compared to its signed counterpart.
