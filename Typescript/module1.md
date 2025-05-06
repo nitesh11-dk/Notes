@@ -34,6 +34,13 @@ E21### Basic Types in TypeScript
     let person: [number, string] = [1, "hello"];
     ```
 
+In short:
+* **Array**: A collection of elements of the **same type** and **dynamic size** (can be changed).
+* **Tuple**: A fixed-size collection where each element can have a **different type**.
+
+Use **arrays** for homogeneous data and **tuples** for heterogeneous data with a fixed length.
+
+
 #### 4. **Enums (Enumerations)**
 - Enumeration predefined constant values ko represent karta hai. Yeh helpful hota hai jab values fixed ho jaise user roles ya days of the week.
     ```typescript
